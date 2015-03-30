@@ -49,9 +49,8 @@ body{
     opacity: 1; 
     height: auto;
 	padding: 2rem 5rem;
-	background: rgba(255,255,255, .1);
-	border-radius: 10%;
-	border: solid 5px rgba(255,255,255, .2);
+	background: rgba(255,255,255, .5);
+	border: solid 5px rgba(0,0,0, .75);
 }
 #container{
 	width: 90%;
@@ -110,22 +109,25 @@ body{
 	text-decoration: none;
 }
 .key{
-	line-height: 3rem;
+	line-height: 3.6rem;
 	margin: 2rem auto;
-	width: 60%;
+/*	width: 75%;*/
 	padding: 0;
 	list-style-type: none;
-	text-align: center;
+	
 }
 .key li { 
 	display: inline-block; 
 	margin: 0 .2rem;
 }
 .swatch{ 
-	width: 1rem;
-	height: 1rem;
-	border: solid 1px #777;
+	font-size: 1.2rem;
+	width: 2.2rem;
+	height: 2.2rem;
+/*	border: solid 1px #777;*/
 	display: inline-block;
+	vertical-align: middle;
+	margin-right: 0.75rem;
 }
 
 .swatch.root,
@@ -165,8 +167,18 @@ body{
 	background:#FFCA22;
 }
 .links{
-	margin-left: 2rem;
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
 }
+.links li {
+	display: inline-block;
+	margin-right: 10px;
+}
+.links li:after {
+	content:",";
+}
+
 h1{
 	text-align: center;
 	font-size: 4rem;
